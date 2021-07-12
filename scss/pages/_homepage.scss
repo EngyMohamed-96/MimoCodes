@@ -1,0 +1,184 @@
+.homepage {
+    .readBtn {
+        padding: 0.8rem 2rem;
+        background: #ffffff;
+        border: none;
+        box-shadow: none;
+        border-radius: 44px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        font-weight: bolder;
+    }
+
+    .login:hover {
+        color: #fa0202;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 5px;
+        background-color: #fff;
+        padding: 5px 10px;
+        margin: 0;
+    }
+
+    .data {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        top: 0;
+        position: relative
+    }
+
+    .title {
+        width: auto;
+        margin-top: 5rem;
+        margin: 0;
+        max-width: 41%;
+        transition: all 0.3s ease-in-out;
+
+        @media screen and (max-width:992px){
+            max-width: 100%;
+
+        }
+    }
+
+    .title h1 {
+        color: #ff4242;
+        font-size: 3rem;
+        letter-spacing: 5px;
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    .title .subTitle {
+        font-size: 0.8rem;
+        font-weight: lighter;
+        color: #e4e4e4;
+    }
+
+
+    .featureList {
+        list-style: none;
+    }
+
+    .featureList li {
+        margin: 8px 0;
+        font-weight: lighter;
+        color: #e4e4e4;
+        font-size: 0.8rem;
+    }
+
+    .featureList li {
+        i {
+            margin-right: 0.8rem;
+        }
+
+    }
+
+    .title p {
+        font-size: 12px;
+    }
+
+    .title h6 {
+        padding-top: 40px;
+        font-size: 15px;
+        font-weight: 500;
+        color: #bcbcbc;
+        padding-bottom: 15px;
+
+    }
+
+    .title h6>span {
+        font-size: 20px;
+        color: #fff;
+
+    }
+
+    .title h3 {
+        padding: 10px 0px;
+        font-size: 22px;
+        font-weight: 600;
+        color: #bcbcbc;
+    }
+    .d-flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .robot {
+        @media screen and (max-width:992px){
+            display: none;
+        }
+        .circle{
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0px;
+             opacity: 0;
+            background-color: #141617;
+            border-radius: 50%;
+            &.one{
+                width: 25rem;
+                height: 25rem;
+            }
+           
+        }
+       
+
+        img {
+            display: none;
+            position: absolute;
+            width: 30rem;
+            opacity: 0;
+            right: 0;
+        }
+        .robot2,.robot1{
+            top: 3rem;
+            transform: rotateZ(-3deg);
+            right: -5rem;
+            width: 35rem;
+        }
+        .robot1{
+            width: 42rem;
+            top: 0.3rem;
+            right: -10rem;
+        }
+    }
+
+
+
+
+    .btnContainer {
+
+        bottom: -3rem;
+        position: relative;
+        display: flex;
+
+        justify-content: flex-start;
+        align-items: center;
+
+        .readBtn {
+            margin-right: 2rem;
+            background-color: #fff;
+            color: #ff4242;
+        }
+
+        .watchIntro {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #ff4242;
+
+            i {
+                font-size: 2rem;
+                font-weight: lighter;
+                margin-left: 0.5rem;
+
+            }
+        }
+    }
+}

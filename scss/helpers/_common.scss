@@ -1,0 +1,119 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+* {
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Yanone Kaffeesatz', sans-serif;*/
+}
+
+body {
+
+    width: 100vw;
+    height: auto;
+    font-size: 16px;
+    color: #fff;
+    overflow-x: hidden;
+    font-family: 'Oxygen', sans-serif;
+    // background-color: rgb(24, 26, 27);
+    color: rgb(232, 230, 227);
+    // background-color: #525252;
+    background-color: #141617;
+    opacity: 1;
+    background: repeating-linear-gradient( 45deg, #121314, #121314 20px, #141617 20px, #141617 351px );
+}
+
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+
+}
+
+.floatedElements{
+    .gear{
+        position: absolute;
+        // top: 10vh;
+        // left: 10vh;
+        color: rgb(128, 128, 128);
+     
+        font-size: 2rem;
+        // filter: drop-shadow(2px 4px 6px black);
+        transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        opacity: 0.8;
+        animation: move-gear 8.3s infinite alternate-reverse ;
+
+        &.one{
+            animation: move-gear2 8.3s infinite alternate-reverse ;
+            i{
+                color: #ff4242;
+            }
+        }
+    }
+}
+
+
+
+@keyframes move-gear {
+    0%
+    {
+        right: 20%;
+        bottom:0;
+        transform: rotate(-180deg);
+    }
+    50%
+    {
+        right: 20%;
+        bottom: 20%;
+         transform:rotate(180deg) rotateX(180deg) rotateY(180deg);
+    }
+    100%{
+        right: 20%;
+        transform: rotate(-180deg);
+        bottom: 10%;
+    }
+
+}
+
+
+@keyframes move-gear2 {
+    0%
+    {
+        left: 5%;
+        top:50%;
+    }
+    50%
+    {
+        left: 5%;
+        top: 53%;
+    }
+    100%{
+        left: 0%;
+        top: 50%;
+    }
+
+}

@@ -1,0 +1,120 @@
+nav{
+
+    .nav-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .flex-container {
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .transpant-bg {
+        font-size: 100px;
+        opacity: 0.08;
+        position: absolute;
+        left: 400px;
+        top: 250px;
+        color: #fff;
+        letter-spacing: 5px;
+    
+    }
+    
+    .logo {
+        width: 120px;
+        height: 120px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav-area li {
+        display: inline-block;
+        padding: 0 20px;
+        font-size: 1rem;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+        @media screen and (max-width:992px){
+            padding: 0 6px;
+
+
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            right: 0;
+            bottom: 0;
+            height: 0%;
+            width: 1px;
+            background-color: #ff4242;
+            transition: all 0.3s ease-in-out;
+        }
+        &:hover::after
+        {
+            height: 100%;
+           
+
+        }
+    }
+    
+    .nav-area li:last-child::after{
+        opacity: 0;
+    }
+    .nav-area li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 0.9rem;
+
+    }
+    
+    .nav-area li a:hover {
+        color: #ccc;
+
+    }
+    
+    
+    .login {
+        color: #fff;
+        letter-spacing: 2px;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 5px;
+        background-color: #5f0000;
+        padding: 5px 10px;
+        margin: 0;
+    }
+    
+    .readBtn {
+        padding: 0.8rem 2rem;
+        background: white;
+        border: none;
+        box-shadow: none;
+        border-radius: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        font-weight: bolder;
+        color: #340000;
+        font-family: system-ui;
+    }
+    
+    .login:hover {
+        color: #fa0202;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 5px;
+        background-color: #fff;
+        padding: 5px 10px;
+        margin: 0;
+    }
+    
+}
+
