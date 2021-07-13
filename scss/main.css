@@ -136,6 +136,14 @@ body {
   }
 }
 
+.mr_b15 {
+  margin-bottom: 10px;
+}
+
+.mr_r15 {
+  margin-right: 10px;
+}
+
 nav .nav-area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -483,23 +491,24 @@ nav .login:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 2rem 0px 1rem;
 }
 
 .dashboard .side-menu {
   width: 100%;
-  height: 500px;
+  height: 700px;
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
-  background-color: black;
+  background-color: #fff;
   margin-right: 10px;
+  border-radius: 12px;
 }
 
 .dashboard .right-menu {
   width: 100%;
-  height: 500px;
+  height: 700px;
   -ms-flex-preferred-size: 80%;
       flex-basis: 80%;
-  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -513,7 +522,6 @@ nav .login:hover {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
   height: 100%;
-  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -531,7 +539,6 @@ nav .login:hover {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   height: 100%;
-  background-color: #fff;
   margin-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -542,12 +549,11 @@ nav .login:hover {
           flex-direction: column;
 }
 
-.dashboard .top-center {
+.dashboard .center-top {
   width: 100%;
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
   height: 30%;
-  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -556,27 +562,25 @@ nav .login:hover {
           justify-content: space-between;
 }
 
-.dashboard .top-right-center {
+.dashboard .center-top-right {
   width: 100%;
-  background-color: midnightblue;
+  background-color: #fff;
+  border-radius: 12px;
 }
 
-.dashboard .top-center-center {
+.dashboard .center-top-left {
   width: 100%;
-  background-color: orangered;
+  background-color: #fff;
+  border-radius: 12px;
 }
 
-.dashboard .top-left-center {
-  width: 100%;
-  background-color: maroon;
-}
-
-.dashboard .bottom-center {
+.dashboard .center-bottom {
   width: 100%;
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%;
   height: 70%;
-  background-color: fuchsia;
+  background-color: #00850b;
+  border-radius: 12px;
 }
 
 .dashboard .left {
@@ -584,7 +588,6 @@ nav .login:hover {
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
   height: 100%;
-  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -595,40 +598,99 @@ nav .login:hover {
   margin-right: 10px;
 }
 
-.dashboard .top-left {
+.dashboard .left-top {
   width: 100%;
   height: 100%;
-  background-color: chocolate;
+  background-color: #202224;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.5rem;
 }
 
-.dashboard .middle-left {
+.dashboard .left-top--topData {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  height: 100%;
-  background-color: #1ebdd2;
+  border-bottom: 1px solid gray;
+  padding-bottom: 1rem;
 }
 
-.dashboard .bottom-left {
-  width: 100%;
-  height: 100%;
-  background-color: #d36d5d;
+.dashboard .left-top--topData-img {
+  width: 4rem;
+  height: 4rem;
+  background-color: white;
+  border-radius: 10px;
 }
 
-.dashboard .top-right {
-  width: 100%;
-  height: 100%;
-  background-color: darkgreen;
+.dashboard .left-top--topData-data {
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.dashboard .middle-right {
+.dashboard .left-middle {
   width: 100%;
   height: 100%;
-  background-color: crimson;
+  background-color: white;
+  border-radius: 12px;
 }
 
-.dashboard .bottom-right {
+.dashboard .left-bottom {
   width: 100%;
   height: 100%;
-  background-color: gold;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.dashboard .right-top {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.dashboard .right-middle {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.dashboard .right-bottom {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 12px;
 }
 
 .pricingpage .circle {
