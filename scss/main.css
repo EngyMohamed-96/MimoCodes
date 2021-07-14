@@ -702,6 +702,12 @@ nav .login:hover {
           align-items: center;
 }
 
+@media screen and (max-width: 992px) {
+  .dashboard {
+    padding: 2rem;
+  }
+}
+
 .dashboard .side-menu {
   width: 100%;
   min-height: 700px;
@@ -718,6 +724,12 @@ nav .login:hover {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+@media screen and (max-width: 992px) {
+  .dashboard .side-menu {
+    display: none;
+  }
 }
 
 .dashboard .side-menu img {
@@ -790,6 +802,17 @@ nav .login:hover {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 992px) {
+  .dashboard .right-menu {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .dashboard .right-menu .center {
   width: 100%;
   -ms-flex-preferred-size: 50%;
@@ -803,6 +826,12 @@ nav .login:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (max-width: 992px) {
+  .dashboard .right-menu .center {
+    margin-bottom: 3rem;
+  }
 }
 
 .dashboard .right-menu .center h3 {
@@ -1353,6 +1382,12 @@ nav .login:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+@media screen and (max-width: 992px) {
+  .dashboard .right-middle {
+    height: 20rem;
+  }
 }
 
 .dashboard .right-middle-data {
