@@ -1,27 +1,7 @@
 nav{
-.menuBtn{
-    width: 2.5rem;
-    height: 3rem;
-  
-   display: flex;
-   justify-content: center;
-   align-items:center;
-   flex-direction: column;
-margin-right: 2rem;
-   display: none;
-   @media screen and (max-width:768px){
-    display: flex;
-   }
-    span{
-        width: 90%;
-        margin: 0 auto;
-        background: white;
-        border-radius: 10px;
-        height: 3.5px;
-        margin: 4px 0;
-    }
 
-}
+
+
     .nav-area {
         display: flex;
         justify-content: center;
@@ -52,11 +32,7 @@ margin-right: 2rem;
         height: 120px;
         margin: 0;
         padding: 0;
-    }
-    .nav-area{
-        @media screen and (max-width:768px){
-            display: none;
-        }
+    
     }
     .nav-area li {
         display: inline-block;
