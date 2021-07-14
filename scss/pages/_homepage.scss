@@ -165,6 +165,12 @@
             margin-right: 2rem;
             background-color: #fff;
             color: #ff4242;
+            cursor: pointer;
+            &:hover
+            {
+                background-color: #ff4242;
+                color:#141617;
+            }
         }
 
         .watchIntro {
