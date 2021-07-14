@@ -596,10 +596,7 @@ nav .login:hover {
           flex-direction: column;
 }
 
-.dashboard .right-menu .center h4 {
-  color: #fff;
-  letter-spacing: 2px;
-  font-weight: 400;
+.dashboard .right-menu .center h3 {
   text-align: center;
 }
 
@@ -795,10 +792,14 @@ nav .login:hover {
   margin-right: 10px;
 }
 
+.dashboard .left span {
+  font-size: 0.8rem;
+  color: #cdcdcd;
+  margin: 0;
+}
+
 .dashboard .left h4 {
-  color: #fff;
-  letter-spacing: 2px;
-  font-weight: 400;
+  margin: 0;
 }
 
 .dashboard .left-top {
@@ -1007,7 +1008,7 @@ nav .login:hover {
 
 .dashboard .left-bottom--bottomData-img i {
   color: #ff4242;
-  font: 1rem;
+  font-size: 1rem;
 }
 
 .dashboard .left-bottom--bottomData-data {
@@ -1027,16 +1028,6 @@ nav .login:hover {
   margin-left: 10px;
 }
 
-.dashboard .left-bottom--bottomData-data h3 {
-  margin: 0;
-  color: #fff;
-}
-
-.dashboard .left-bottom--bottomData-data span {
-  color: #6f7377;
-  margin: 0;
-}
-
 .dashboard .left-bottom--bottomData-arrow {
   position: absolute;
   right: 0;
@@ -1045,7 +1036,7 @@ nav .login:hover {
 
 .dashboard .left-bottom--bottomData-arrow i {
   color: #ff4242;
-  font: 1rem;
+  font-size: 1rem;
   cursor: pointer;
   margin-top: -13px;
 }
@@ -1065,12 +1056,6 @@ nav .login:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.dashboard .right h4 {
-  color: #fff;
-  letter-spacing: 2px;
-  font-weight: 400;
 }
 
 .dashboard .right-top {
