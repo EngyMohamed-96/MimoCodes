@@ -273,6 +273,12 @@ body {
   color: #ff4242;
 }
 
+@media screen and (max-width: 991px) {
+  .floatedElements .gear.one {
+    display: none;
+  }
+}
+
 @-webkit-keyframes move-gear {
   0% {
     right: 20%;
@@ -378,16 +384,6 @@ nav .flex-container {
   margin-bottom: 20px;
 }
 
-nav .transpant-bg {
-  font-size: 100px;
-  opacity: 0.08;
-  position: absolute;
-  left: 400px;
-  top: 250px;
-  color: #fff;
-  letter-spacing: 5px;
-}
-
 nav .logo {
   width: 120px;
   height: 120px;
@@ -404,9 +400,9 @@ nav .nav-area li {
   transition: all 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   nav .nav-area li {
-    padding: 0 6px;
+    padding: 0 4px;
   }
 }
 
@@ -437,19 +433,14 @@ nav .nav-area li a {
   font-size: 0.9rem;
 }
 
-nav .nav-area li a:hover {
-  color: #ccc;
+@media screen and (max-width: 991px) {
+  nav .nav-area li a {
+    font-size: 0.8rem;
+  }
 }
 
-nav .login {
-  color: #fff;
-  letter-spacing: 2px;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 5px;
-  background-color: #5f0000;
-  padding: 5px 10px;
-  margin: 0;
+nav .nav-area li a:hover {
+  color: #ccc;
 }
 
 nav .readBtn {
@@ -1574,7 +1565,7 @@ nav .login:hover {
 
 @media screen and (max-width: 768px) {
   .pricingpage .card {
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
 }
 

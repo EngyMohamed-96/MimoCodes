@@ -216,12 +216,11 @@ body {
 .floatedElements{
     .gear{
         position: absolute;
-        // top: 10vh;
-        // left: 10vh;
+       
         color: rgb(128, 128, 128);
      
         font-size: 2rem;
-        // filter: drop-shadow(2px 4px 6px black);
+  
         transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         opacity: 0.8;
         animation: move-gear 8.3s infinite alternate-reverse ;
@@ -231,9 +230,15 @@ body {
             i{
                 color: #ff4242;
             }
+            @media screen and(max-width:991px) {
+               display: none;
+                
+                }
+            }
+           
         }
     }
-}
+
 
 
 
