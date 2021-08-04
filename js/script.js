@@ -30,8 +30,7 @@ tlOne.to('.robot .robot2',0.6,{opacity:0,display:'none'},'-=0.6');
     stagger:'0.2'
   })
 
-
-
+  
   $( document ).ready(function() {
     $('.loading').fadeOut()
 });
